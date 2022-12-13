@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css@7/themes/satellite-min.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <title>Demo 3</title>
+</head>
+
+<body class="bg-slate-400 flex justify-center font-mono">
+  <div class="text-gray-700 bg-white min-h-screen p-8">
+    <div class="container">
+      <div class="search-panel">
+        <div class="search-panel__filters">
+          <div id="brand-list"></div>
+        </div>
+
+        <div class="search-panel__results">
+          <h1 class="pb-3 font-bold">InstantSearch: DEMO 3</h1>
+          <!-- Searchbox Widget Container -->
+          <div class="widget__container">
+              <div class="tag">Search: default</div>
+              <div id="searchbox__container" class="pb-2"></div>
+          </div>
+          <!-- Pagination Widget Container -->
+          <div class="pagination__container widget__container">
+            <div class="tag">Pagination: Default</div>
+            <div id="pagination" class="p-8 text-center"></div>
+          </div>
+          <div class="flex">
+            <div class="hits-example hits-example__template widget__container">
+              <div class="tag">Hits: Custom template (Title, Desc, Image)</div>
+              <div id="hits-custom__container">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.10.5/dist/algoliasearch-lite.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.44.0"></script>
+  <script src="./assets/js/main.js" type="module"></script>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.widget__container {
+  border: dotted orange;
+  padding: 2px;
+  margin: 2px;
+  padding-top: 20px;
+}
+
+.hits-example {
+  &__default {
+    flex-shrink: 50;
+    flex-grow: 0;
+  }
+
+  &__template {
+    flex-shrink: 2;
+    flex-grow: 2;
+    flex-basis: 50%;
+  }
+}
+
+#hits-custom__container {
+  .ais-Hits-list {
+    flex-flow: wrap;
+    flex-grow: 0;
+    flex-shrink: 2;
+    display: flex;
+    justify-content: left;
+    align-items: start;
+    flex-direction: column;
+
+    .ais-Hits-item {
+      flex: 50 0 100%;
+      padding: 2px;
+    }
+  }
+}
+
+#hits-default__container {
+  .ais-Hits-item {
+    font-size: .75em;
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+  }
+}
+
+.tag {
+  position: absolute;
+  background-color: gray;
+  padding: 2px 8px;
+  font-size: .7em;
+  color: lightyellow;
+  transform: translate(2px, -18px);
+  border-radius: 4px;
+  display: none;
+}
+
+.ais-Pagination {
+  display: inline-block;
+}
+
+article {
+  align-items: center;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  p {
+    padding: 20px 0 10px;
+    font-size: .8em;
+  }
+
+  img {
+    max-width: 80px;
+    margin-right: 20px;
+  }
+}
