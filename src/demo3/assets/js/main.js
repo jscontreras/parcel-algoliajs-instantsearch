@@ -38,13 +38,13 @@ const myHitsCustomTemplate = instantsearch.widgets.hits({
     </article>
     `
   },
-  transformItems(items) {
-    return items.map(item => {
-      item._highlightResult.name.value = item._highlightResult.name.value.toUpperCase() + '!!!'
-      return {
-      ...item
-    }});
-  },
+  // transformItems(items) {
+  //   return items.map(item => {
+  //     item._highlightResult.name.value = item._highlightResult.name.value.toUpperCase() + '!!!'
+  //     return {
+  //     ...item
+  //   }});
+  // },
 })
 
 const myPaginator = instantsearch.widgets.pagination({

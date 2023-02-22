@@ -53,8 +53,8 @@ const myPaginator = instantsearch.widgets.pagination({
 const widgets = [
   myInstantSearchGlobalConfig,
   mySearchBox,
-  //myHitsDefault,
-  myHitsCustomTemplate,
+  myHitsDefault,
+  // myHitsCustomTemplate,
   myPaginator
 ]
 

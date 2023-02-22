@@ -45,4 +45,4 @@ const widgets = [
 myInstantSearch.addWidgets(widgets);
 
 // Initialize InstantSearch
-myInstantSearch.start();
+// myInstantSearch.start();
